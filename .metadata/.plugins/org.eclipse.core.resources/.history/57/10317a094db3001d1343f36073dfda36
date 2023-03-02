@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pagina 2</title>
+	</head>
+	<body>
+		
+		<%
+			/*
+				Este es un scriptlet (bloque de codigo JAVA). 
+				Capturamos los parametros enviados en el objeto "request"
+			*/
+			
+			/* coger los datos de la tabla */
+			String nameUser = request.getParameter("nameUser");
+			String favoriteColor = request.getParameter("favoriteColor");
+			String email = request.getParameter("email");
+			
+			/* coger el dato de radio-button */
+			String transport = request.getParameter("transport");
+			
+			/* coger los datos de checkbox */
+			String city = request.getParameter("city");
+			String forest = request.getParameter("forest");
+			String beach = request.getParameter("beach");
+			
+			/* coger el comentario del textarea */
+			String comment = request.getParameter("comment");
+						
+		%>
+			<h1>Esta es la pagina secundaria</h1>
+			<h2>Aqui se muestran los datos insertados anteriormente</h2>
+			
+			<table border="1px">
+				<!-- Nombre -->	
+				<tr>
+					<td>
+						Te llamas:
+					</td>
+					<td>
+						<%= nameUser %>
+					</td>
+				</tr>
+				<!-- Color favorito -->
+				<tr>
+					<td>
+						Tu color favorito:
+					</td>
+					<td>
+						<%= favoriteColor %>	
+					</td>
+				</tr>
+				<!-- Correo -->
+				<tr>
+					<td>
+						Tu email:
+					</td>
+					<td>
+						<%= email %>
+					</td>
+				</tr>
+			</table>
+			
+			<p>Este es el comentario del usuario: </p>
+			<%= comment %>
+		
+	</body>
+</html>

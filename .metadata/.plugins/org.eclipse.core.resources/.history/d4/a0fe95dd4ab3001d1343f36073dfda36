@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio</title>
+	</head>
+	<body>
+		<h1>Esta es la pagina de inicio</h1>
+		<h2>Aquí se pinden los datos</h2>
+		
+		<form action="pagina2.jsp" method="post">
+			<table>
+				<!-- Nombre -->	
+				<tr>
+					<td>
+						Nombre:
+					</td>
+					<td>
+						<input type="text" name="nameUser">	
+					</td>
+				</tr>
+				<!-- Color favorito -->
+				<tr>
+					<td>
+						Color favorito:
+					</td>
+					<td>
+						<input type="text" name="favoriteColor">	
+					</td>
+				</tr>
+				<!-- Correo -->
+				<tr>
+					<td>
+						Email:
+					</td>
+					<td>
+						<input type="email" name="email">
+					</td>
+				</tr>
+			</table>
+			
+			<!-- eleccion por radio -->
+			<input type="radio" name="transporte" value="">
+			<input type="radio" name="transporte" value="">
+			<input type="radio" name="transporte" value="">
+			
+			<textarea name="comment" rows="5" cols="30"></textarea>
+			
+			<input type="reset" value="Borrar">
+			<input type="submit" value="Enviar">
+			
+		</form>
+	</body>
+</html>

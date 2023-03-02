@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inicio</title>
+	</head>
+	<body>
+		<h1>Esta es la pagina de inicio</h1>
+		<h2>Aquí se pinden los datos</h2>
+		
+		<form action="pagina2.jsp" method="post">
+			<table>
+				<!-- Nombre -->	
+				<tr>
+					<td>
+						Nombre:
+					</td>
+					<td>
+						<input type="text" name="nameUser">	
+					</td>
+				</tr>
+				<!-- Color favorito -->
+				<tr>
+					<td>
+						Color favorito:
+					</td>
+					<td>
+						<input type="text" name="favoriteColor">	
+					</td>
+				</tr>
+				<!-- Correo -->
+				<tr>
+					<td>
+						Email:
+					</td>
+					<td>
+						<input type="email" name="email">
+					</td>
+				</tr>
+			</table>
+			<br>
+			
+			<!-- eleccion por radio button -->
+			<p>Elige el transporte preferido</p>
+			<input type="radio" name="transport" value="car"> Car
+			<input type="radio" name="transport" value="plane">Avión
+			<input type="radio" name="transport" value="bus"> Autobus
+			<br>
+			
+			<!-- eleccion por checkbox -->
+			<p>Destino favorito</p>
+			<input type="checkbox" name="city" value="city"> Ciudad <br>
+			<input type="checkbox" name="forest" value="forest"> Bosque <br>
+			<input type="checkbox" name="beach" value="beach"> Playa <br>
+			
+			
+			<!-- Poner un comentario -->
+			<p>Escribe un comentario</p>
+			<textarea name="comment" rows="5" cols="30"></textarea>
+			
+			<!-- eleccion con un select -->
+			<select name="language">
+				<option>Español</option>
+				<option>Inglés</option>
+				<option>Frances</option>
+				<option>Alemán</option>
+			</select>
+			
+			<input type="reset" value="Borrar">
+			<input type="submit" value="Enviar">
+			
+		</form>
+	</body>
+</html>

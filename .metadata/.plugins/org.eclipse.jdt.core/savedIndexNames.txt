@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/home/estudiante/DAW2/Desarrollo web en entorno servidor/estudio/.metadata/.plugins/org.eclipse.jdt.core
+719509911.index
+717152864.index
+485628313.index
+2190503497.index
+1865797976.index

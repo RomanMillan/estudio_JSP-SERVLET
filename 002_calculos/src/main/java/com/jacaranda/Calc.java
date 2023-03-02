@@ -1,0 +1,36 @@
+package com.jacaranda;
+
+public class Calc {
+
+	private Double firstTime;
+	private Double lastTime;
+	private Double distance;
+	private Double speed;
+	private Double totalTime;
+	
+	//Constructor	
+	public Calc(Double firstTime, Double lastTime, Double distance) {
+		super();
+		this.firstTime = firstTime;
+		this.lastTime = lastTime;
+		this.distance = distance;
+		this.speed = 0.0;
+		this.totalTime = 0.0;
+	}
+	
+	//Metodos 	
+	
+	//calculamos el tiempo total
+	public Double calcTotalTime() {
+		totalTime = lastTime - firstTime;
+		return totalTime;
+	}
+	
+	//calculamos la velocidad	
+	public double calcSpeed() {
+		speed = distance / (calcTotalTime());
+		return speed;
+	}
+	
+	
+}

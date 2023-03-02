@@ -1,0 +1,8 @@
+package com.jacaranda;
+
+public class Calc {
+
+	private Double firstTime;
+	private double lastTime;
+	private 
+}

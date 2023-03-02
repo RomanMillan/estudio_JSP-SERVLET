@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.jacaranda.Calc" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			/* Extracción de los parametros recibidos */
+			String name = request.getParameter('userName');
+		%>		
+	</body>
+</html>

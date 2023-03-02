@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/home/estudiante/DAW2/Desarrollo web en entorno servidor/estudio/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1874389017.index
+/003_fichero_java/src/main/java
+/home/estudiante/DAW2/Desarrollo web en entorno servidor/estudio/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2158604085.index
+/002_calculos/src/main/java

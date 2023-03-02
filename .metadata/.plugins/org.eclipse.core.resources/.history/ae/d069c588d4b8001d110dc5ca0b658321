@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.jacaranda.Calc" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<%
+			/* Extracción de los parametros recibidos */
+			String name = request.getParameter("userName");
+			Double firstTime = Double.parseDouble(request.getParameter("firstTime"));
+			Double lastTime = Double.parseDouble(request.getParameter("lastTime"));
+			Double distance = Double.parseDouble(request.getParameter("distance"));			
+			
+			/* creación del objeto */
+			Calc c = new Calc(firstTime,lastTime,distance);
+			
+		%>		
+		<h1>Resultado</h1>
+		<table border="1px">
+			<tr>
+				<td>
+					Tu tiempo total:
+				</td>
+				<td>
+				<!-- llamamos al metodo para calcular el tiempo y mostrarlo -->
+					<%= c.calcTotalTime() %> min
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Tu velocidad:
+				</td>
+				<td>
+				<!-- llamamos a metodo para calcular la velocidad y mostrarlo -->
+					<%= c.calcSpeed() %> m/s
+				</td> 
+			</tr>
+		</table>
+		
+		<!-- Formulario para crear un botón, e ir a la pagina anterior -->
+		<form action="index.jsp" method="post">
+			<input type="submit" value="Atras">
+		</form>
+		
+	</body>
+</html>
