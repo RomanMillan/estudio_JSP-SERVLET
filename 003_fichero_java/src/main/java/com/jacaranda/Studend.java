@@ -1,0 +1,77 @@
+package com.jacaranda;
+
+import java.util.Objects;
+import java.io.*;
+
+public class Studend {
+
+	private String name;
+	private String surname;
+	private Double avarage;
+	
+	//	CONSTRUCTOR
+	public Studend(String name, String surname, Double avarage) {
+		super();
+		this.name = name;
+		this.surname = surname;
+		this.avarage = avarage;
+	}
+
+	
+	//	GETTETR AND SETTER
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSurname() {
+		return surname;
+	}
+
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	public Double getAvarage() {
+		return avarage;
+	}
+
+	public void setAvarage(Double avarage) {
+		this.avarage = avarage;
+	}
+
+	//METHODS	
+	
+	
+	
+	// HashCode AND EQUALS
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, surname);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Studend other = (Studend) obj;
+		return Objects.equals(name, other.name) && Objects.equals(surname, other.surname);
+	}
+
+	//	TO STRING
+	@Override
+	public String toString() {
+		return "Studend [name=" + name + ", surname=" + surname + ", avarage=" + avarage + "]";
+	}
+	
+	
+	
+}

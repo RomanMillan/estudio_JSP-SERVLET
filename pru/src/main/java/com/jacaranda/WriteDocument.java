@@ -1,0 +1,31 @@
+package com.jacaranda;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class WriteDocument {
+	
+	public static void add(Studend a, String path) throws IOException{
+		PrintWriter pw = null;
+		try {
+			File fileStudend = new File(path);
+			FileWriter fw = new FileWriter(fileStudend, true);
+			pw = new PrintWriter(fw);
+			pw.println(a.getName()+","+ a.getSurname()+","+ a.getSurname());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(pw != null) {
+					pw.close();
+				}
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+	}
+	
+}

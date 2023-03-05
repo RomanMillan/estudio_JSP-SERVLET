@@ -1,5 +1,9 @@
 INDEX VERSION 1.131
+C:\Users\roman\OneDrive\Escritorio\DAW2\Desarrollo web Ent servidor\2do Trimestre\estudio_JSP-SERVLET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\750241672.index
+\003_fichero_java\src\main\java
 C:\Users\roman\OneDrive\Escritorio\DAW2\Desarrollo web Ent servidor\2do Trimestre\estudio_JSP-SERVLET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2076374425.index
 \002_calculos\src\main\java
+C:\Users\roman\OneDrive\Escritorio\DAW2\Desarrollo web Ent servidor\2do Trimestre\estudio_JSP-SERVLET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1088572686.index
+\pru\src\main\java
 C:\Users\roman\OneDrive\Escritorio\DAW2\Desarrollo web Ent servidor\2do Trimestre\estudio_JSP-SERVLET\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1400021590.index
 \001_cogerDatos\src\main\java

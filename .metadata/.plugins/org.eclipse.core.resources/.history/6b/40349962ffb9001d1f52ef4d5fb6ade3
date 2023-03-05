@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="com.jacaranda.WriteDocument, com.jacaranda.Studend" %>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body>
+			
+			<%
+				/* Obtención de parametros de la petición */
+			
+				String userName = request.getParameter("userName");
+				String lastName = request.getParameter("lastName");
+				Double avarage = Double.parseDouble(request.gerParameter("avarage"));
+				
+				/* Creamos el objeto alumno */
+				Studend st = new Studend(userName,lastName,avarage);
+				
+				ServletContext sc;
+				String path = sc.getRealPath("/webapp/Promedios.txt");
+				/* path = path.replace('\\','/'); */
+				
+				/* Guardar en archivo */
+				WriteDocument.add(st, path);
+				
+			%>
+	</body>
+</html>
